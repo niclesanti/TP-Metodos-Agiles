@@ -121,6 +121,4 @@ public class Titular{
         this.donanteOrganos = donanteOrganos;
     }
 
-    
-    // 
 }
