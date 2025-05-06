@@ -13,8 +13,8 @@ public class Titular{
     private Integer idTitular;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "tipo_dni", length = 20, nullable = false)
-    private TipoDni tipoDni;
+    @Column(name = "tipo_documento", length = 20, nullable = false)
+    private TipoDocumento tipoDocumento;
 
     @Column(name = "documento", length = 8, nullable = false, unique = true)
     private String documento;
@@ -49,19 +49,19 @@ public class Titular{
         this.idTitular = idTitular;
     }
 
-    public TipoDni getTipoDni() {
-        return tipoDni;
+    public TipoDocumento getTipoDocumento() {
+        return tipoDocumento;
     }
 
-    public void setTipoDni(TipoDni tipoDni) {
-        this.tipoDni = tipoDni;
+    public void setTipoDocumento(TipoDocumento tipoDocumento) {
+        this.tipoDocumento = tipoDocumento;
     }
 
     public String getDocumento() {
         return documento;
     }
 
-    public void setDni(String documento) {
+    public void setDocumento(String documento) {
         this.documento = documento;
     }
 
