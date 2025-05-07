@@ -19,23 +19,23 @@ public class Titular{
     @Column(name = "documento", length = 8, nullable = false, unique = true)
     private String documento;
 
-    @Column(name = "nombre", length = 100, nullable = false)
+    @Column(name = "nombre", length = 50, nullable = false)
     private String nombre;
 
-    @Column(name = "apellido", length = 100, nullable = false)
+    @Column(name = "apellido", length = 50, nullable = false)
     private String apellido;
 
     @Temporal(TemporalType.DATE)
     @Column(name = "fecha_nacimiento", nullable = false)
     private Date fechaNacimiento;
 
-    @Column(name = "direccion", length = 255)
+    @Column(name = "direccion", length = 100)
     private String direccion;
 
     @Column(name = "grupo_sanguineo", length = 3)
     private String grupoSanguineo;
 
-    @Column(name = "factor_rh", length = 3)
+    @Column(name = "factor_rh", length = 12)
     private String factorRH;
 
     @Column(name = "donante_organos", nullable = false)
