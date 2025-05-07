@@ -1,4 +1,4 @@
-package com.gestionlicencias.model;
+package com.gestionlicencias.gestionlicenciasconducir.model;
 
 import java.util.Date;
 

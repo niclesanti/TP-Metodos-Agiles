@@ -1,4 +1,4 @@
-package com.gestionlicencias.model;
+package com.gestionlicencias.gestionlicenciasconducir.model;
 
 import java.util.Date;
 
@@ -40,6 +40,9 @@ public class Titular{
 
     @Column(name = "donante_organos", nullable = false)
     private Boolean donanteOrganos;
+
+    public Titular() {
+    }
 
     public Integer getIdTitular() {
         return idTitular;
