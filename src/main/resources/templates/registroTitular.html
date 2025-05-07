@@ -264,9 +264,11 @@
 
     if (!valido) {
       alert('Por favor, complete todos los campos obligatorios.');
+      return false;
     }
 
-    return valido;
+    return confirm('¿Está seguro de que desea registrar el titular?');
+    
   }
 </script>
 
