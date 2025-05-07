@@ -3,7 +3,7 @@ package com.gestionlicencias.gestionlicenciasconducir.model;
 import java.util.Date;
 
 import jakarta.persistence.*;
-//aca anduvo franco
+
 @Entity
 @Table(name = "titular")
 public class Titular{
