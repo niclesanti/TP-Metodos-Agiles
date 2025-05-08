@@ -22,7 +22,7 @@ public class TitularServiceImpl implements TitularService {
     @Override
     @Transactional
     public Titular crearTitular(Titular titular) {
-        // Puedes validar aquí, e.g. documento único:
+        // Valida aca si el documento ya existe
         if (repository.existsByDocumento(titular.getDocumento())) {
             throw new IllegalArgumentException(
                 "Ya existe un titular con documento " + titular.getDocumento());
